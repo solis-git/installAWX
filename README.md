@@ -4,6 +4,8 @@ Coleção de scripts para instalação do AnsibleAWX
 O AWX fornece uma interface de usuário baseada na Web, API REST e mecanismo de tarefas construído sobre o Ansible.
 É um dos projetos upstream da Red Hat Ansible Automation Platform.
 
+##### OBS: awx-operator version 0.22.0
+
 ## Referência
 ##### Projetos utilizados como base para geração dos scrips de instalação
 
