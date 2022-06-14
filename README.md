@@ -26,4 +26,5 @@ https://github.com/ansible/awx
 cd ~
 git clone https://github.com/solis-git/installAWX.git
 cd installAWX
+sh setup.sh
 ```
