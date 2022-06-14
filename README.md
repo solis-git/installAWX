@@ -30,3 +30,22 @@ git clone https://github.com/solis-git/installAWX.git
 cd installAWX
 sh setup.sh
 ```
+#### Perguntas a serem respondidas durante a instalação
+
+Definição do usuário que será utilizado para copiar os arquivos de backups dos ativos de rede:
+```
+Nome do usuário para FTP: <ftp user> 
+Senha do usuário para FTP: <ftp user password>
+Confirmação: <ftp user password>
+```
+Hostname do servidor AWX, o endereço de acesso a interface será https://<hostname.do.servidor>
+```
+AWX Server Hostname: <hostname.do.servidor>
+```
+Definição da senha do banco de dados e da senha do usuário *admin* (utilizado para conectar na interface web)
+```
+Senha do banco de dados (PGSQL): <root database password>
+Confirmação: <root database password>
+Senha do ADMIN da interface AWX: <user 'admin' interface password>
+Confirmação: <user 'admin' interface password>
+```
