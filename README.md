@@ -21,7 +21,7 @@ https://github.com/ansible/awx
 	- 40G	/
 	- 38G	/data
 
-## Install AWX Server (web interface)
+## Instalação do AWX Server (interface web)
 ```
 cd ~
 git clone https://github.com/solis-git/installAWX.git
