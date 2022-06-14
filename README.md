@@ -1,6 +1,13 @@
 # installAWX
 Coleção de scripts para instalação do AnsibleAWX
 
+## Referência
+##### Projetos utilizados como base para geração dos scrips de instalação
+
+https://github.com/kurokobo/awx-on-k3s (instalação)
+
+https://github.com/ansible/awx
+
 Requisitos para instalação do AnsibleAWX
 ----------------------------------------
 - 4vcpus – Mínimo (se pode mais melhor)
