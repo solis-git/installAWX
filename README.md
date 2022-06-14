@@ -11,8 +11,7 @@ https://github.com/kurokobo/awx-on-k3s (instalação)
 
 https://github.com/ansible/awx
 
-Requisitos para instalação do AnsibleAWX
-----------------------------------------
+## Requisitos para instalação do AnsibleAWX
 - 4vcpus – Mínimo (se pode mais melhor)
 - 8GB de RAM – Mínimo (se pode mais melhor)
 - Ubuntu 20.04 server (com acesso a internet e a rede de gerenciamento do ativos)
@@ -21,3 +20,9 @@ Requisitos para instalação do AnsibleAWX
 	- 1.5G 	/boot
 	- 40G	/
 	- 38G	/data
+
+## Install AWX Server (web interface)
+
+cd ~
+git clone https://github.com/solis-git/installAWX.git
+cd installAWX
