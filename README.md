@@ -30,7 +30,7 @@ git clone https://github.com/solis-git/installAWX.git
 cd installAWX
 sh setup.sh
 ```
-### Perguntas que devem respondidas durante a instalação
+### Perguntas que devem ser respondidas durante a instalação
 
 - Definição do usuário que será utilizado para copiar os arquivos de backups dos ativos de rede:
 ```
