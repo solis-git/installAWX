@@ -23,9 +23,7 @@ https://github.com/ansible/awx
 
 ## Install AWX Server (web interface)
 ```
-{
 cd ~
 git clone https://github.com/solis-git/installAWX.git
 cd installAWX
-}
 ```
