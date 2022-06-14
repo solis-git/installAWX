@@ -46,8 +46,8 @@ sudo mv denyusers.conf /etc/ssh/sshd_config.d/
 sudo service sshd restart
 # Setting UP $FTP_USER and VSFTPD Server
 sudo chmod o-w /home/$FTP_USER/
-sudo chown $FTP_USER:$FTP_USER -R /home/$FTP_USER/
 sudo mkdir /home/$FTP_USER/backup_files
+sudo chown $FTP_USER:$FTP_USER -R /home/$FTP_USER/
 sudo mv /etc/vsftpd.conf /etc/vsftpd.conf.bak
 sudo cp ~/installAWX/vsftpd.conf /etc/vsftpd.conf
 sudo systemctl restart vsftpd
