@@ -69,7 +69,7 @@ Se você possui um arquivo de inventário com as informações de HOSTS e IP, é
 > alter table main_host alter COLUMN modified set default now();
 
 **O arquivo CSV para importar as informações dos hosts deve conter a estrutura conforme o exemplo abaixo:**
-IMPORTANTE: verificar se os valores definidor para os campos **"created_by_id"** e **"inventory_id"** correspondem aos IDs existentes no banco.
+- IMPORTANTE: verificar se os valores definidor para os campos **"created_by_id"** e **"inventory_id"** correspondem aos IDs existentes no banco.
 ```
 "description";"name";"instance_id";"variables";"enabled";"created_by_id";"inventory_id";"ansible_facts"
 "TF-SEAD-ALMOX";"TF-SEAD-ALMOX";" ";"ansible_host: 192.168.33.2";"t";1;2;"{}"
