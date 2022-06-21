@@ -50,3 +50,33 @@ Confirmação: <root database password>
 Senha do ADMIN da interface AWX: <user 'admin' interface password>
 Confirmação: <user 'admin' interface password>
 ```
+
+## PÓS instalação
+Se você possui um arquivo de inventário com as informações de HOSTS e IP, é possível importar essas informações diretamente no banco postgreSQL do AWX. Para isso é só seguir o passo-a-passo abaixo descrito.
+
+Acessa o servidor AWX via SSH
+> ssh USER@AWX-SERVER
+
+Comanado para conectar no container do banco
+> kubectl -n awx exec -it awx-postgres-0 bash
+
+Comando para conectar via CLI no banco
+> psql -Uawx -p 5432 -W <password>
+
+
+É necessário executar as linhas abaixo para preparar a tabela de hosts *main_host* para receber import de dados
+```
+alter table main_host alter COLUMN created set default now();
+alter table main_host alter COLUMN modified set default now();
+```
+
+O arquivo CSV para importar as informações dos hosts deve conter a estrutura conforme o exemplo abaixo:
+```
+"description";"name";"instance_id";"variables";"enabled";"created_by_id";"inventory_id";"ansible_facts"
+"TF-SEAD-ALMOX";"TF-SEAD-ALMOX";" ";"ansible_host: 192.168.33.2";"t";1;2;"{}"
+"TF-PROCURADORIA-NEF";"TF-PROCURADORIA-NEF";" ";"ansible_host: 192.168.33.6";"t";1;2;"{}"
+```
+comando para importar hosts para base, tabela "main_host"
+> \copy main_host(description,name, instance_id, variables, enabled, created_by_id, inventory_id, ansible_facts)  from '/<path/to/file>/<file>.csv' with delimiter as ';' CSV HEADER ;
+
+
