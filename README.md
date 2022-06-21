@@ -24,6 +24,7 @@ https://github.com/ansible/awx
 	- 38G	/data
 
 ## Instalação do AWX Server (interface web)
+Após o servidor instalado, com IP configurado (de preferência também configurar o serviço de DNS para o nome da máquina) e o acesso via SSH com um usuário que tem permissão de sudo, basta copiar as linhas abaixo para instalar o servidor AWX.
 ```
 cd ~
 git clone https://github.com/solis-git/installAWX.git
