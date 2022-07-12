@@ -57,7 +57,7 @@ Se você possui um arquivo de inventário com as informações de HOSTS e IP, é
 **Acessa o servidor AWX via SSH**
 > ssh USER@AWX-SERVER
 
-**Comanado para conectar no container do banco**
+**Comando para conectar no container do banco**
 > kubectl -n awx exec -it awx-postgres-0 bash
 
 **Comando para conectar via CLI no banco**
